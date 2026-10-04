@@ -345,64 +345,152 @@
 
 
 const Questions = [
-  // Success
-  "What kind of success feels most real to you: public recognition or private satisfaction?",
+
+  // Everyday moments
+  "What is a completely ordinary object that has an unexpectedly interesting story behind it?",
+  "Tell us about a time when you had to improvise because your original plan stopped working.",
+  "What is the most unexpected compliment you have ever received?",
+  "Have you ever laughed at a moment when you absolutely should not have laughed?",
+  "Tell us about a time when you embarrassed yourself and later found it funny.",
+  "What is the most awkward situation you have ever handled surprisingly well?",
+  "Have you ever pretended to understand something when you actually had no idea what was happening?",
+  "What is the funniest misunderstanding you have had with someone because of a word or phrase?",
+  "Tell us about a time when you accidentally overheard something you were never meant to hear.",
+  "What is the strangest reason you have ever had for being late?",
+
+  // Choices and decisions
+  "Have you ever said yes to something before realizing what you had agreed to?",
+  "Tell us about a time when you changed your plans at the very last minute.",
+  "What is a decision you made in five minutes that ended up affecting you for a long time?",
+  "Have you ever rejected an opportunity and later been curious about what would have happened?",
+  "Tell us about a time when you chose the harder option for a personal reason.",
+  "What is something you once avoided for a long time before finally trying it?",
+  "Have you ever made a decision mainly because of one small detail?",
+  "What is a choice you made that surprised even the people who know you well?",
+  "Tell us about a time when you had to choose between what was convenient and what felt right.",
+  "Have you ever changed your plans because of something another person said at the last moment?",
+
+  // Places
+  "What place can you visit repeatedly without getting bored, and what keeps drawing you back?",
+  "Tell us about a place where something completely unexpected happened to you.",
+  "What is the most memorable room or building you have ever been in?",
+  "Have you ever gotten lost somewhere and ended up discovering something interesting?",
+  "What place from your past would you recognize instantly even after many years?",
+  "Tell us about a view you remember much more clearly than you expected.",
+  "What is the most unusual place where you have had an important conversation?",
+  "Have you ever returned to a place after many years and felt that you were seeing it differently?",
+  "What place makes you feel most unlike your everyday self?",
+  "Tell us about a place you disliked at first but gradually started appreciating.",
+
+  // Objects and possessions
+  "What is the oldest thing you still own, and why have you kept it?",
+  "Tell us about an object you lost that you still remember clearly.",
+  "Have you ever found something valuable in an unexpected place?",
+  "What everyday item would be surprisingly difficult for you to replace?",
+  "Is there a piece of clothing you associate with one particular period of your life?",
+  "What is one object you would save first if you had only a minute to leave home?",
+  "Have you ever borrowed something and ended up keeping it much longer than expected?",
+  "Tell us about something you bought for one reason and ended up using for another.",
+  "What object in your room says the most about you without you trying to make it meaningful?",
+  "What is something you own mainly because of the memory attached to it?",
+
+  // Communication and people
+  "What is the most memorable first impression you have ever had of someone?",
+  "Tell us about a person you completely misjudged before getting to know them.",
+  "Have you ever had a conversation with a stranger that became much more personal than expected?",
+  "What is the most unexpected question someone has ever asked you?",
+  "Tell us about a time when you had to explain something important without using the easiest words.",
+  "Have you ever kept a message or note because of how it made you feel?",
+  "What is something you wish you had said in a conversation from the past?",
+  "Tell us about a time when someone understood what you meant even though you explained it badly.",
+  "Have you ever communicated with someone mostly through gestures, expressions, or silence?",
+  "What is the most unusual reason you have ever started talking to someone?",
+
+  // Learning and discovery
+  "What is a skill you learned accidentally rather than deliberately?",
+  "Tell us about something you taught yourself without taking a class.",
+  "Have you ever learned something from a person you did not expect to learn from?",
+  "What is a subject you ignored for years and then suddenly became interested in?",
+  "Tell us about the first time you realized you were actually good at something.",
+  "Have you ever discovered that something you found difficult became easy after one small change?",
+  "What is the most useful thing you learned from watching someone else?",
+  "Tell us about a time when you solved a problem in a completely different way from everyone around you.",
+  "Have you ever become interested in something because of one random detail?",
+  "What is something you know how to do that people are often surprised to hear about?",
+
+  // Emotions and reactions
+  "What is a tiny inconvenience that can completely change your mood?",
+  "Tell us about a day when one small event unexpectedly made everything feel better.",
+  "What is the most nervous you have ever been about something that turned out to be easy?",
+  "Have you ever felt calm during a situation when everyone else was panicking?",
+  "Tell us about a moment when you realized you were overthinking something.",
+  "What kind of situation makes you unusually competitive?",
+  "Have you ever surprised yourself with how emotional you became about something small?",
+  "What is one situation in which you become much more confident than usual?",
+  "Tell us about a time when you were expecting one emotion but felt something completely different.",
+  "Have you ever changed your opinion of yourself because of one specific experience?",
+
+  // Personal change
+  "What is a personal rule you created for yourself after one memorable experience?",
+  "Tell us about a period when your daily life looked very different from it does now.",
+  "Have you ever outgrown something that used to feel like an important part of you?",
+  "What is something about your personality that became obvious only as you got older?",
+  "Tell us about a time when you realized you had become more independent.",
+  "Have you ever returned to an old hobby and experienced it differently as an adult?",
+  "What is something you do differently now because of one experience from the past?",
+  "Tell us about a moment when you noticed that your priorities had quietly changed.",
+  "Have you ever surprised yourself by enjoying a role or situation you expected to dislike?",
+  "What part of your personality do people usually notice only after knowing you for a while?",
+
+  // Music, books, films and senses
+  "What is the most memorable meal you have ever had for a reason that had nothing to do with the food?",
+  "Tell us about a food you hated as a child but later started liking.",
+  "Have you ever tried something completely unfamiliar because someone else encouraged you?",
+  "What smell, sound, or song can instantly place you in a specific moment?",
+  "Tell us about a song that became meaningful because of something that happened while you were listening to it.",
+  "What is a very specific sound from your past that you would recognize immediately?",
+  "Have you ever discovered a favorite piece of music, film, or book through a completely random recommendation?",
+  "What is one movie or book you understood very differently the second time?",
+  "Tell us about a fictional character you unexpectedly related to.",
+  "What piece of media has stayed in your mind much longer than you expected?",
+
+  // Everyday routines
+  "What is the longest you have ever waited for something without knowing whether it would be worth it?",
+  "Tell us about a day when your original expectations were completely wrong.",
+  "Have you ever started doing something for practical reasons and ended up enjoying it for personal reasons?",
+  "What is one routine part of your day that you secretly look forward to?",
+  "Tell us about a period when your schedule was unusually chaotic.",
+  "Have you ever had to completely reorganize your day because of one unexpected problem?",
+  "What is one activity you prefer doing alone even though most people do it socially?",
+  "Tell us about a time when doing something slowly worked much better than rushing it.",
+  "Have you ever discovered that you function much better at a particular time of day?",
+  "What is one everyday task you have developed a surprisingly efficient way of doing?",
+
+    // ===== old questions ======
+
+    // Success
   "Tell us about a time when you achieved something you once thought was too hard.",
-  "What success in your life looked small from the outside but meant a lot to you?",
   "Have you ever reached a goal and then realized it was not what you actually wanted?",
-  "What is more valuable to you: success that comes quickly or success that lasts?",
-  "Tell us about a success you earned only after several failures.",
-  "What is one success you are proud of even if nobody else noticed it?",
-  "Have you ever seen someone succeed in a way that changed your view of them?",
-  "What is the difference between being successful and feeling successful?",
-  "If you had to define success in one sentence from your own experience, what would you say?",
 
   // Failure
-  "What was a failure that taught you more than a success ever could?",
-  "Tell us about a time when you failed in front of other people.",
-  "Have you ever failed at something, then later realized it saved you from a worse result?",
   "What kind of failure do people usually hide, but should talk about more?",
   "What was the most useful mistake you have ever made?",
-  "Tell us about a time when you expected to win, but lost completely.",
-  "Have you ever recovered from a failure in a way that surprised you?",
   "What failure changed how you prepare for important things now?",
-  "Is it harder to fail in public or to fail privately? Why?",
-  "What is one failure you would not erase from your life?",
 
-  // Luck
-  "What is the luckiest thing that has ever happened to you?",
-  "Tell us about a moment when being late or early changed everything.",
-  "Have you ever escaped a bad situation by pure luck?",
-  "What is something in your life that worked out better than you deserved?",
-  "Do you believe lucky people create their own luck, or is luck random?",
-  "Tell us about a small coincidence that still feels strange to you.",
-  "Have you ever had a lucky break that came after a very bad day?",
-  "What is the best thing that happened to you by accident?",
-  "Do you think luck matters more at the beginning of life or later?",
-  "If you could keep one lucky moment forever, which one would you choose?",
-
+  
   // Time
   "What is something you used to waste time on but no longer do?",
   "Tell us about a day that felt long while it was happening, but short in memory.",
-  "What moment in your life do you wish you had experienced more slowly?",
-  "Do you think people manage time badly, or do they manage priorities badly?",
-  "What is the hardest thing for you to make time for?",
-  "Tell us about a period of your life that changed very quickly.",
   "Have you ever lost track of time doing something you really enjoyed?",
-  "What is one thing time has made easier for you?",
-  "What is one thing time has made more complicated?",
   "If you could buy back one hour from your past, how would you use it?",
 
   // Money
-  "What was the first time you earned money yourself, and how did it feel?",
   "Tell us about a purchase you still think was worth it.",
   "Have you ever spent money on something small that made a big difference?",
   "What is something people often waste money on without thinking?",
-  "Do you feel more comfortable saving money or spending money?",
   "Tell us about a time when money changed your plans.",
   "Have you ever regretted not spending money on something important?",
   "What is one money habit you learned from your family?",
-  "Is money more useful for freedom or for security?",
   "If you had to teach a child one lesson about money, what would it be?",
 
   // Friendship
@@ -412,23 +500,15 @@ const Questions = [
   "What is the most important thing you look for in a friend?",
   "Tell us about a friend who helped you through a difficult time.",
   "Have you ever lost a friendship because of distance, time, or change?",
-  "What is one thing friends can say to each other that others cannot?",
-  "Do you think old friends are easier to trust than new ones?",
   "What is the best memory you have with a friend?",
-  "What makes a friendship last for years?",
-
+  
   // Trust
-  "What was the first time someone really trusted you with something important?",
   "Tell us about a time when trusting someone paid off.",
-  "Have you ever trusted the wrong person, and what did you learn?",
-  "What makes trust difficult to rebuild once it is broken?",
-  "Is it easier to trust actions or words?",
   "Tell us about a person who earned your trust slowly.",
   "Have you ever had to trust yourself when nobody else agreed with you?",
   "What is one sign that tells you someone is trustworthy?",
   "Do you think trust should be given quickly or carefully?",
-  "What is more painful: losing trust in someone, or knowing they lost trust in you?",
-
+  
   // Family
   "What is one thing you inherited from your family that is not physical?",
   "Tell us about a family tradition you still remember clearly.",
@@ -445,9 +525,7 @@ const Questions = [
   "What is the most valuable thing school or work has taught you?",
   "Tell us about a teacher, boss, or mentor who changed your attitude.",
   "Have you ever worked on something that felt pointless at first but became useful later?",
-  "What is the hardest part of being a student or employee today?",
   "Tell us about a time when teamwork worked much better than expected.",
-  "Have you ever learned faster from a deadline than from a lesson?",
   "What is one skill school or work forced you to develop?",
   "Do you think grades or results matter more in the long run?",
   "Tell us about a time when responsibility made you more mature.",
@@ -464,6 +542,8 @@ const Questions = [
   "What experience made you understand yourself better?",
   "What is a small thing that makes you genuinely happy very quickly?",
   "If you had to describe your current life chapter in one title, what would it be?"
+
+
 ];
 
 
